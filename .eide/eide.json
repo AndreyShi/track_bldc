@@ -1,0 +1,467 @@
+{
+  "name": "track_bldc",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "Drivers",
+    "Inc",
+    "Src",
+    "startup"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "f2b892f9307ccea51afbce2b96aee4e6"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32l4x",
+        "interface": "stlink",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32l4x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "SWD",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x08000000",
+          "elFile": "None",
+          "optionBytes": ".eide/debug.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc",
+          ".eide/deps"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "STM32L433xx",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER",
+          "TRACK_ADR=0x0A"
+        ]
+      }
+    },
+    "Release": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [],
+        "defineList": [],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_A": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0A",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_B": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0B",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_C": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0C",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_D": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0D",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_E": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0E",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    },
+    "track_F": {
+      "excludeList": [
+        "Drivers/CMSIS/Device/ST/STM32L4xx/Source",
+        "Drivers/CMSIS/DSP_Lib"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "Drivers/bldc",
+          "Drivers/modbus/rtu",
+          "Drivers/modbus/port",
+          "Drivers/CMSIS/Device/ST/STM32L4xx/Include",
+          "Drivers/CMSIS/Include",
+          "Drivers/modbus/include",
+          "Drivers/STM32L4xx_HAL_Driver/Inc",
+          "Inc"
+        ],
+        "defineList": [
+          "STM32L433xx",
+          "TRACK_ADR=0x0F",
+          "NDEBUG",
+          "__FPU_PRESENT=1",
+          "ARM_MATH_CM4",
+          "USE_HAL_DRIVER"
+        ],
+        "sourceDirList": [],
+        "libList": []
+      }
+    }
+  },
+  "version": "3.3"
+}

@@ -1,0 +1,367 @@
+!!! Warning !!!
+
+There are some incompatible arguments between 'eclipse' and 'eide', you need check and add them to eide project manually !
+
+When you have solved these incompatible problems, you need delete this note file, otherwise this file will be show again !
+
+---
+
+##### Configurations For All Targets #####
+
+//
+///// Target: 'Debug' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'Release' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = undefined
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m3
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs: []
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_A' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_B' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_C' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_D' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_E' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
+
+//
+///// Target: 'track_F' /////
+//
+
+Incompatible Args:
+    /:
+        globalArgs:
+            - <Optimization Level> = ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size
+            - <Debug level> = ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max
+            - <Debug format> = undefined
+            - <undefined> = GNU Tools for ARM Embedded Processors
+            - <Architecture> = ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm
+            - <Arm family (-mcpu)> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4
+            - <Instruction set> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb
+            - <Prefix> = arm-none-eabi-
+            - <C compiler> = gcc
+            - <C++ compiler> = g++
+            - <Archiver> = ar
+            - <Hex/Bin converter> = objcopy
+            - <Listing generator> = objdump
+            - <Size command> = size
+            - <Build command> = make
+            - <Remove command> = rm
+            - <Create flash image> = true
+            - <Print size> = true
+            - <Float ABI> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.hard
+            - <FPU Type> = ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16
+            - <Create extended listing> = true
+            - "<Other optimization flags> = "
+            - <undefined> = 1287942917
+        cIncDirs: []
+        cMacros: []
+        cCompilerArgs: []
+        sIncDirs: []
+        sMacros: []
+        assemblerArgs:
+            - <Use preprocessor> = true
+        linkerArgs:
+            - <No startup or default libs (-nostdlib)> = false
+            - <Do not use default libraries (-nodefaultlibs)> = false
+            - <Do not use standard start files (-nostartfiles)> = false
+            - <Use newlib-nano (--specs=nano.specs)> = false
+            - <Libraries (-l)> = undefined
+        linkerLibArgs: []
+
