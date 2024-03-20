@@ -282,9 +282,7 @@ volatile bool BLDC_t01_flag = false;
 
 //#define Kusrise (0.03*7.0/(float)var_cur.Trise)
 //#define Kusfall (0.03*7.0/(float)var_cur.Tfall)
-#define SZBLDC_tmp 5000
-float BLDC_tmp[SZBLDC_tmp];
-int BLDC_tmp_inc;
+
 void BLDC_Poll() {
 	if (BLDC_t01_flag) {
 		BLDC_t01_flag = false;
@@ -384,16 +382,14 @@ void BLDC_Poll() {
 
 
 		if (BLDC_PWM_Af > BLDC_PWM_Max)
+		{
 			BLDC_PWM_Af = BLDC_PWM_Max;
+			var_cur.pwmLimitFlag = true;
+		}
 		if (BLDC_PWM_Af < 0)
-			BLDC_PWM_Af = 0;
+			{BLDC_PWM_Af = 0;}
 			
 		var_cur.PWMA = (uint16_t) (BLDC_PWM_Af + .5);
-
-		if(BLDC_tmp_inc < SZBLDC_tmp)
-            {BLDC_tmp[BLDC_tmp_inc++] = var_cur.PWMA;}
-		else
-		    {__asm("nop");}
 		BLDC_SetPWMA(var_cur.PWMA);
 	}
 }

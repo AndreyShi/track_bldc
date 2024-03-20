@@ -86,11 +86,12 @@ var_str var_test = {
 	.Steps       = 21,
 	.Vin         = 22,
 	.HallTicks   = 23,
-	.HallState   = 24,
-	.PWMA        = 25,
-	.Vrot        = 26,
-	.Vrot_next   = 27,
-	.direction   = 28,
+	.pwmLimitFlag= 24,
+	.HallState   = 25,
+	.PWMA        = 26,
+	.Vrot        = 27,
+	.Vrot_next   = 28,
+	.direction   = 29,
 	};
 
 static uint32_t lock_nesting_count = 0;
@@ -220,6 +221,7 @@ int main(void) {
 		} else {
 			BLDC_On(var_cur.on);
 			var_cur.Ilimit_flag = false;
+			var_cur.pwmLimitFlag = false;
 		}
 
 /*		if (var_cur.Ilimit_flag == true) {
