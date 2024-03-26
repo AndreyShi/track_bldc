@@ -96,7 +96,7 @@
           "__FPU_PRESENT=1",
           "ARM_MATH_CM4",
           "USE_HAL_DRIVER",
-          "TRACK_ADR=0x0A"
+          "TRACK_ADR=0x0D"
         ]
       }
     },
